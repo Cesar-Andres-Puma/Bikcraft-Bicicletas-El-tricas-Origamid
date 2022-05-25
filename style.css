@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --c12-color: #000000;
+  --c11-color: #111111;
+  --c10-color: #2e2e2e;
+  --c9-color:  #404040;
+  --c8-color:  #595959;
+  --c7-color:  #717171;
+  --c6-color:  #9c9c9c;
+  --c5-color:  #b2b2b2;
+  --c4-color:  #cccccc;
+  --c3-color:  #dedede;
+  --c2-color:  #ededed;
+  --c1-color:  #f7f7f7;
+  --W:         #ffffff;
+  --p5-color:  #332200;
+  --p4-color:  #664400;
+  --p3-color:  #a66f00;
+  --p2-color:  #e4a30b;
+  --p1-color:  #ffbb08;
+}
+.header-bg{
+    background-color: var(--c12-color);
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem;
+    
+}
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+.header-menu a{
+    display: inline-block;
+    padding: 1rem 0;
+    color: var(--W);
+    font-size: 1.12rem;
+    position: relative;
+}
+.header-menu a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width:0%;
+    background-color: var(--W);
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+.header-menu a:hover::after{
+    width: 100%;
+}
+img{
+    width: 100%;
+    display: block;
+}
+@media (max-width:800px) {
+    .header-menu{
+        gap:1.25rem;
+    }
+    .header-menu a{
+        background-color: var(--c11-color);
+        padding: 0.75rem 1rem;
+        border-radius:4px ;
+    }
+    .header-menu a::after{
+        display: none;
+    }
+    .header-menu a:hover{
+        background-color:var(--c10-color);
+    }
+}
+@media(max-width:600px){
+    .header-menu{
+        gap:0.75rem;
+    }
+    .header-menu a{
+        padding:0.5rem 0.75rem;
+        /*font-size:;*/
+    }
+}
+@media(max-width:600px){
+    .header{
+        flex-direction: column;
+    }
+    .header > a::after{
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+      content: "";
+      height: 2px;
+      background-color: var(--W);
+    }
+    .header-menu{
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
