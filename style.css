@@ -129,9 +129,6 @@ img{
 .escolha-sua{
     color: var(--c12-color);
 }
-.escolha-sua-bg{
-    margin: 0 auto;
-}
 .escolha-sua-bg > div{
     max-width: 1200px;
     margin: 0 auto;
@@ -182,7 +179,26 @@ img{
         padding-bottom: 1.5rem;
     }
     .introducao img{
-        height: 500px;
+        height: 300px;
+    }
+    .escolha-sua-bg > div{
+        font-size: 1rem;
+    }
+    .escolha-sua{
+        display: block;
+    }
+    .introducao-conteudo h1{
+        font-size: 2rem;
+        margin-bottom:0.5rem;
+    }
+    .introducao-conteudo p{
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+    .introducao-conteudo a{
+        font-size: 1rem;
+        line-height: 1.33;
+        padding: 1rem 1rem;
     }
 }
 @media(max-width:600px){
