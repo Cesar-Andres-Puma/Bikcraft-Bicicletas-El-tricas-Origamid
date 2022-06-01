@@ -121,7 +121,7 @@ img{
 .introducao-conteudo a:hover{
     background-color:#e2a408;
 }
-.introducao img{
+.introducao img, .container-img img{
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
@@ -152,9 +152,6 @@ img{
    margin-bottom: 20px;
    object-fit: cover;
 }
-.escolha-sua-bg ul a li div{
-    padding-left: 20px;
-}
 .escolha-sua-bg ul a li div > h2{
     font-size: 2rem;
     margin-bottom: 0.5rem;
@@ -162,7 +159,7 @@ img{
     align-items: center;
     
 }
-.escolha-sua-bg ul a li h2::before{
+.escolha-sua-bg h2::before{
     content: "";
     display: inline-block;
     width: 12px;
@@ -171,7 +168,7 @@ img{
     margin-right: 8px;
     transition: width 0.2s;
 }
-.escolha-sua-bg ul a li h2:hover::before{
+.escolha-sua-bg a:hover h2::before{
     width: 24px;
 }
 .escolha-sua-bg ul a li span{
@@ -180,7 +177,9 @@ img{
     font-size: 1.125rem;
 }
 article{
-    background-color: var(--c11-color);
+
+    box-shadow: inset 0 -80px var(--W), inset 0 80px var(--W);
+    background-color:var(--c11-color);
 }
 .tecnologia-avancada{
     display: grid;
@@ -189,26 +188,57 @@ article{
     max-width: 1200px;
     padding: 1.25rem;
     margin: 0 auto;
-    background-color:var(--c11-color);
-    box-shadow: inset 0 -120px rgb(255, 255, 255);
 }
 .textos{
-    padding: 10rem 0;
+    padding: 9rem 0;
 }
 .textos h1{
 font-size: 1.5rem;
 color: var(--c7-color);
+margin-bottom: 20px;
 }
 .textos h2{
     font-size: 3.5rem;
+    margin-bottom: 35px;
 }
 .textos p{
-    font-size: 1.4rem;
-    color:var(--c7-color);
+    font-size: 1.6rem;
+    color:var(--c5-color);
+    margin-bottom: 20px;
 }
 .textos a{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: var(--p1-color);
+    display: flex;
+    flex-direction: column-reverse;
+   
+}
+.textos a::before{
+    display: block;
+    content: "";
+    width: 50%;
+    height: 5px;
+    background-color: var(--p1-color);
+}
+.textos ul{
+    margin-top: 90px;
+    display: flex;
+    gap: 40px;
+}
+.textos li{
+    display: flex;
+    flex-direction: column;
+}
+.textos li h4{
+    margin-bottom: 12px;
+}
+.textos li p{
+    font-size: 1rem;
+    line-height: 22px;
+}
+.textos li img{
+    width: 30px;
+    margin-bottom: 10px;
 }
 @media (max-width:935px) {
     .escolha-sua-bg ul{
@@ -216,7 +246,7 @@ color: var(--c7-color);
         margin: 0 1rem;
         overflow: scroll;
         overflow-y:hidden;
-        padding-bottom: 5px;
+        padding-bottom: 8px;
       }
       .escolha-sua-bg > li:last-child{
         background-color: red;
