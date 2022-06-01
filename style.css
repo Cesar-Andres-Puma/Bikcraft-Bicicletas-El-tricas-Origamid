@@ -247,7 +247,7 @@ margin-bottom: 20px;
     width: 30px;
     margin-bottom: 10px;
 }
-@media screen and (max-width:1200px) and (max-width:1400px){
+@media screen and (max-width:950px) and (max-width:1400px){
     .escolha-sua-bg ul{
         gap: 1.5rem;
         margin: 0 1rem;
@@ -332,4 +332,21 @@ margin-bottom: 20px;
         height: 2px;
         background-color: var(--W);
       }
+}
+@media screen and (max-width:600px) {
+    .escolha-sua{
+        padding-bottom: 0;
+    }
+    .textos h1{
+        font-size: 1.2rem;
+    }
+    .textos h2{
+        font-size: 2rem;
+    }
+    .textos ul{
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 }
