@@ -209,6 +209,7 @@ margin-bottom: 20px;
 .textos a{
     font-size: 1.6rem;
     color: var(--p1-color);
+    display: inline-block;
 }
 .textos a h3{
     display: flex;
@@ -246,6 +247,43 @@ margin-bottom: 20px;
 .textos li img{
     width: 30px;
     margin-bottom: 10px;
+}
+section h2 {
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: 3rem;
+    color:var(--c12-color);
+    padding-left: 20px;
+}
+section h2 > span{
+    color: var(--p2-color);
+}
+section ul{
+    max-width:1400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    padding: 5rem 20px;
+}
+section ul li{
+  display: flex;
+  padding: 2rem;
+  border-left: 2px solid var(--c2-color);
+}
+section ul li{
+    border-top: solid var(--c2-color);
+}
+section ul li:nth-last-child(n + 5) {
+    border-top: 2px solid var(--cor-2);
+  }
+section ul li img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+section ul li:first-child, section ul li:nth-child(5) {
+    border-left: none;
 }
 @media screen and (max-width:950px) and (max-width:1400px){
     .escolha-sua-bg ul{
@@ -309,6 +347,15 @@ margin-bottom: 20px;
         line-height: 1.33;
         padding: 1rem 1rem;
     }
+    section ul{
+            grid-template-columns: repeat(2,1fr);
+    }
+    section ul li:nth-child(odd) {
+        border-left: none;
+    }
+    section ul li:nth-child(n+3){
+        border-top: 2px solid var(--c2-color);
+      }
 }
 @media(max-width:600px){
     .header{
