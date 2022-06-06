@@ -285,6 +285,48 @@ section ul li img{
 section ul li:first-child, section ul li:nth-child(5) {
     border-left: none;
 }
+.pedalar{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--p1-color);
+ margin-bottom: 200px;
+}
+.pedalada-img > img{
+    max-height: 520px;
+    object-fit: cover;
+}
+.texto-pedalar{
+    color: black;
+    align-self: end;
+    padding: 40px 40px 80px 80px;
+}
+.texto-pedalar p{
+    position: relative;
+    max-width: 32ch;
+    font-size: 2rem;
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 30px;
+
+}
+.texto-pedalar p::before{
+    content: "“";
+    left: -50px;
+    top: -20px;
+}
+.texto-pedalar p::after{
+    content: "”";
+}
+.texto-pedalar p::after,.texto-pedalar p::before{
+    font-size: 5rem;
+    color: var(--cor-p2);
+    position: absolute;
+}
+.texto-pedalar span{
+    color: var(--p4-color);
+    font-weight: 600;
+}
 @media screen and (max-width:950px) and (max-width:1400px){
     .escolha-sua-bg ul{
         gap: 1.5rem;
