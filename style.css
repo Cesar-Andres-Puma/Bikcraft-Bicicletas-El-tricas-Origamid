@@ -330,8 +330,88 @@ section ul li:first-child, section ul li:nth-child(5) {
     font-weight: 600;
 }
 .seguros{
-    background-color: black;
-    display: none;
+    background-color: var(--c11-color);
+    
+}
+.seguros > h1{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 3rem;
+    color: var(--W);
+    padding-left: 20px;
+}
+.seguros h1 > span{
+    color: var(--p2-color);
+}
+.item-seguros{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:40px;
+    align-items: center;
+    padding: 1rem 3.75rem ;
+    margin: 0 auto;
+}
+.item-seguros > li{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 32px 32px 32px 60px;
+    border-radius: 4px;
+    background-color: var(--c12-color);
+}
+.item-seguros li > h1{
+    color: var(--c5-color);
+    margin-bottom: 2.5rem;
+}
+.item-seguros li h1, .item-seguros li span p:nth-last-child(2){
+    font-size: 2.2rem;
+}
+.item-seguros li span > p:last-child{
+    color: var(--c5-color);
+    text-align: end;
+}
+.item-seguros li ul > li{
+    color:var(--W);
+    position: relative;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+.item-seguros li ul > li::before{
+    display: inline-block;
+    content: "";
+    background-image: url(./img/icones/lista.svg);
+    position: absolute;
+    width: 13px;
+    height: 9px;
+    left: -21px;
+}
+.item-seguros li > a{
+    display: inline-block;
+    max-width: max-content;
+    background-color: var(--c10-color);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    text-transform: uppercase;
+    color: var(--W);
+    margin-top: 0.9rem;
+}
+.item-seguros li:last-child a{
+    background: var(--p1-color);
+    color: var(--p5-color);
+}
+.sub-itens-seguros:last-child h1{
+    color: var(--p1-color);
+}
+.sub-itens-seguros:first-child a:hover{
+    background-color: var(--c9-color);
+}
+.sub-itens-seguros:last-child a:hover{
+    background-color:#e2a408;
+}
+.item-seguros li > a{
+    grid-column: 1/-1;
 }
 @media screen and (max-width:950px) and (max-width:1400px){
     .escolha-sua-bg ul{
