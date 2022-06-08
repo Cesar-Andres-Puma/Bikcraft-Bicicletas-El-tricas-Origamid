@@ -598,4 +598,7 @@ color: var(--c3-color);
     .footer-bg{
         grid-template-columns: 1fr;
     }
+    .lista-um ul{
+        margin-bottom: 40px;
+    }
 }
