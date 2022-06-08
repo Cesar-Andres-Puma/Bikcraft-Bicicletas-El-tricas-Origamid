@@ -607,6 +607,7 @@ footer {
   }
   .item-seguros li > a{
     padding: 1rem 1.2rem;
+    font-size: 0.8rem;
   }
   .item-seguros li h1, .item-seguros li span p:nth-last-child(2){
     font-size: 1.4rem;
