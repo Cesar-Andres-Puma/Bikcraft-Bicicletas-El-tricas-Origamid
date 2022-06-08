@@ -604,4 +604,7 @@ footer {
   .lista-um ul {
     margin-bottom: 40px;
   }
+  .item-seguros li > a{
+    padding: 1rem 1.5rem;
+  }
 }
