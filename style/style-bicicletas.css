@@ -139,11 +139,28 @@ section{
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: start;
+  position: relative;
 }
 .section-bg-texto h1{
   font-size:2rem;
   grid-column: 1/3;
  margin-bottom: 32px;
+}
+.section-bg-texto::after{
+  content: "";
+  background: url(../img/dec/top-right.svg) no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+}
+.section-bg-texto h1::before{
+content: "";
+width: 12px;
+height: 8px;
+display: flex;
+background-color: var(--p1-color);
+margin-bottom: 5px;
 }
 .section-bg-texto p{
 color: var(--c7-color);
@@ -297,7 +314,9 @@ footer {
 .footer-bg > img {
   display: none;
 }
-
+.section-bg-texto::after{
+  display: none;
+}
 }
 @media (max-width: 600px) {
   .header {
